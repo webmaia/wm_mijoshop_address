@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="cck_field" version="2.3.2" method="upgrade">
+
+	<name>WM MIJOSHOP ADDRESS</name>
+	<author>Cristiano Maia</author>
+	<creationDate>March 2013</creationDate>
+	<authorEmail>cristiano@webmaia.com.br</authorEmail>
+	<authorUrl>http://www.webmaia.com.br</authorUrl>
+	<copyright>Copyright (C) 2013 Cristiano Maia. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.0.0</version>
+	<description>PLG_CCK_FIELD_WM_MIJOSHOP_ADDRESS_DESC2</description>
+	
+	<scriptfile>install/script.php</scriptfile>
+	
+	<files>
+		<folder>install</folder>
+		<folder>install/fields</folder>
+		<folder>languages</folder>
+		<folder>tmpl</folder>
+		
+		<filename plugin="wm_mijoshop_address">wm_mijoshop_address.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.plg_cck_field_wm_mijoshop_address.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_cck_field_wm_mijoshop_address.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.plg_cck_field_wm_mijoshop_address.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.plg_cck_field_wm_mijoshop_address.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="/libraries/cck/construction/field">
+
+			<fieldset name="basic">
+				<field name=""
+					type="spacer"
+					hr="false"
+				/>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="group"
+					type="text"
+					default="PLG_CCK_FIELD_GROUP_WM_MIJOSHOP_ADDRESS"
+					label="LIB_CCK_GROUP_LABEL"
+					size="60"
+					description="LIB_CCK_FIELD_GROUP_DESC" />
+				<field
+					name="export"
+					type="cckexport"
+					default=""
+					label="LIB_CCK_EXPORT_LABEL"
+					description="LIB_CCK_FIELD_EXPORT_DESC" />
+			</fieldset>
+
+		</fields>
+	</config>
+	
+</extension>
